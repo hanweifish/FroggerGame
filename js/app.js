@@ -105,7 +105,7 @@ Score.prototype.render = function() {
     ctx.fillText("Lose: " + this.lose,420,540);
 }
 
-var score = new Score;
+var score = new Score();
 
 // Now instantiate your objects.
 // Place all enemy objects in an array called allEnemies
@@ -113,7 +113,7 @@ var score = new Score;
 var allEnemies = [];
 
 var genallEnemies = function() {
-    var enemy = new Enemy;
+    var enemy = new Enemy();
     allEnemies.push(enemy);
 }
 
@@ -136,7 +136,7 @@ var updatedallEnemies = function() {
 setInterval(updatedallEnemies, 1000);
 
 
-var player = new Player;
+var player = new Player();
 
 
 // This listens for key presses and sends the keys to your
